@@ -8,7 +8,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 
-    <title>Frontend Mentor | Testimonials grid section</title>
+    <title>Frontend Mentor | Meet Landing Page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -30,12 +30,83 @@
 </head>
 
 <body>
+    <header class="wrapper">
+        <a href="/">
+            <img src="/images/logo.svg" class="logo" alt="Homepage" width="119" height="28">
+        </a>
+    </header>
 
-    <footer class="attribution">
+    <main class="wrapper">
+        <section class="hero grid">
+            <img src="/images/desktop/image-hero-left.png" class="hero__image"
+                alt="Hero section image showing profile images of people">
+            <img src="/images/desktop/image-hero-right.png" class="hero__image"
+                alt="Hero section image showing profile images of people">
+            <div class="hero__content">
+                <h1 class="hero__title">Group Chat for Everyone</h1>
+                <p class="hero__description">
+                    Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+                </p>
+                <a href="#" class="button hero__button button--teal">Download v1.3</a>
+                <a href="#" class="button hero__button button--purple">What is it?</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature__number-container">
+                <div class="feature__vertical-line"></div>
+                <p class="feature_number">01</p>
+            </div>
+
+            <div class="feature__grid grid">
+                <div class="feature__grid-item">
+                    <img src="/images/desktop/image-woman-in-videocall.jpg" alt="Woman in a video call">
+                </div>
+                <div class="feature__grid-item">
+                    <img src="/images/desktop/image-women-videochatting.jpg" alt="Women video chatting">
+                </div>
+                <div class="feature__grid-item">
+                    <img src="/images/desktop/image-men-in-meeting.jpg" alt="Men in a meeting">
+                </div>
+                <div class="feature__grid-item">
+                    <img src="/images/desktop/image-man-texting.jpg" alt="Man texting on his phone">
+                </div>
+            </div>
+
+            <div class="feature__content">
+                <p class="feature__tagline">
+                    Built for modern use
+                </p>
+                <h2 class="feature__title">
+                    Smarter meetings, all in one place
+                </h2>
+                <p class="feature__description">
+                    Send messages, share files, show your screen, and record your meetings — all in one workspace.
+                    Control who can join with invite-only team access, data encryption, and data export.
+                </p>
+            </div>
+
+            <div class="feature__number-container">
+                <div class="feature__vertical-line"></div>
+                <p class="feature_number">02</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrapper footer--image">
+        <h2 class="footer__title">
+            Experience more together
+        </h2>
+        <p class="footer__description">
+            Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+        </p>
+        <a href="#" class="button footer__button button--purple">Download v1.3</a>
+    </footer>
+
+    <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
             Mentor</a>.
         Coded by <a href="https://www.frontendmentor.io/profile/adeysh">Adesh Katiya</a>.
-    </footer>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
 </body>

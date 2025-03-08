@@ -1,14 +1,56 @@
 @use '../util' as u;
 
 :root {
-    --f-body: #{clamp(u.rem(12), 0.7181122448979592rem + 0.13605442176870747vw, u.rem(13))};
-    --scale: 1.25;
+    --f-body: u.rem(16);
+    --f-xl: u.rem(40);
+    --f-l: u.rem(32);
+    --f-s: u.rem(11.2);
 
-    // --f-s: calc(var(--f-body) / var(--scale));
-    // --f-xs: calc(var(--f-s) / var(--scale));
-    --f-m: calc(var(--f-body) * var(--scale));
-    --f-l: calc(var(--f-m) * var(--scale));
+    --f-w-bold: 700;
+    --f-w-extra-bold: 800;
+    --f-w-black: 900;
+}
 
-    --f-w-medium: 500;
-    --f-w-semi-bold: 600;
+/* red-hat-display-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/red-hat-display-v20-latin/red-hat-display-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* red-hat-display-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/red-hat-display-v20-latin/red-hat-display-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* red-hat-display-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/fonts/red-hat-display-v20-latin/red-hat-display-v20-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* red-hat-display-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/red-hat-display-v20-latin/red-hat-display-v20-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
