@@ -66,6 +66,9 @@
         font-size: var(--f-body);
         font-weight: var(--f-w-bold);
         color: var(--grey);
+        overflow: hidden;
+        max-width: 40ch;
+        white-space: wrap;
     }
 
     &--overlap {

@@ -7,12 +7,31 @@
     width: u.rem(192);
     font-size: var(--f-body);
     font-weight: var(--f-w-extra-bold);
+    border: 1px solid transparent;
+    transition: background-color 150ms ease-in-out;
+
+
+
 
     &--teal {
         background-color: var(--teal);
+
+        &:hover {
+            background-color: var(--white);
+            color: var(--teal);
+            border: 1px solid var(--teal);
+            transition: background-color 300ms ease-in-out;
+        }
     }
 
     &--purple {
         background-color: var(--purple);
+
+        &:hover {
+            background-color: var(--white);
+            color: var(--purple);
+            border: 1px solid var(--purple);
+            transition: background-color 300ms ease-in-out;
+        }
     }
 }

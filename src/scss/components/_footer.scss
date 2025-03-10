@@ -6,6 +6,13 @@
     text-align: center;
     @include u.flexCenter;
     flex-direction: column;
+
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
     gap: u.rem(24);
     padding: u.rem(64) u.rem(16);
 
@@ -47,5 +54,8 @@
     &__description {
         font-size: var(--f-body);
         color: var(--white);
+        overflow: hidden;
+        max-width: 40ch;
+        white-space: wrap;
     }
 }
