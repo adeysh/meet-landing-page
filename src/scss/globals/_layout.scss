@@ -1,5 +1,11 @@
 @use '../util' as u;
 
+.wrapper {
+    width: min(u.rem(1440), 100%);
+    margin-inline: auto;
+    height: 100%;
+}
+
 .grid {
     // 2*2 grid for mobile vw
     display: grid;

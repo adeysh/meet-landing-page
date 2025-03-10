@@ -2,10 +2,11 @@
 
 .footer {
     position: relative;
-    width: 100%;
     text-align: center;
     @include u.flexCenter;
     flex-direction: column;
+    gap: u.rem(24);
+    padding: u.rem(64) u.rem(16);
 
     @media (min-width: 1024px) {
         display: grid;
@@ -13,8 +14,6 @@
         justify-items: center;
     }
 
-    gap: u.rem(24);
-    padding: u.rem(64) u.rem(16);
 
     &--image {
         &::before {
