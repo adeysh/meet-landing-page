@@ -1,0 +1,39 @@
+@use '../util' as u;
+
+.hero {
+    &__image {
+        grid-area: hero-image;
+    }
+
+    &__content {
+        grid-area: hero-content;
+        margin-block: u.rem(32);
+        padding-inline: u.rem(24);
+        text-align: center;
+
+        @include u.flexCenter;
+        flex-direction: column;
+        gap: u.rem(24);
+    }
+
+    &__title {
+        font-size: var(--f-xl);
+        font-weight: 900;
+        color: var(--darkblue);
+    }
+
+    &__description {
+        font-size: var(--f-body);
+        color: var(--darkblue);
+        overflow: hidden;
+        max-width: 40ch;
+        white-space: wrap;
+    }
+
+    &__buttons {
+        padding-block-start: u.rem(16);
+        @include u.flexCenter;
+        flex-direction: column;
+        gap: u.rem(16);
+    }
+}

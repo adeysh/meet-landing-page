@@ -1,5 +1,11 @@
 @use '../util' as u;
 
-.logo {
-    width: 119px;
+.header {
+    @include u.flexCenter;
+    padding: u.rem(48);
+
+    &__logo {
+        width: 119px;
+    }
+
 }

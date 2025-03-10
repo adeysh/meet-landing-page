@@ -1,11 +1,13 @@
 @use '../util' as u;
 
 :root {
-    --f-body: u.rem(16);
-    --f-xl: u.rem(40);
-    --f-l: u.rem(32);
-    --f-s: u.rem(11.2);
+    // font-size
+    --f-body: #{u.rem(16)};
+    --f-xl: #{u.rem(40)};
+    --f-l: #{u.rem(32)};
+    --f-s: #{u.rem(11.2)};
 
+    // font-weight
     --f-w-bold: 700;
     --f-w-extra-bold: 800;
     --f-w-black: 900;

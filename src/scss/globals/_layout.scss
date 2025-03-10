@@ -1,8 +1,55 @@
 @use '../util' as u;
 
-.wrapper {
-    width: min(u.rem(1110), calc(100% - u.rem(58)));
-    margin-inline: auto;
-    height: 100%;
-    background-color: lightcoral;
+.grid {
+    // 2*2 grid for mobile vw
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hero-image hero-image"
+        "hero-content hero-content";
+
+    // Hiding hero images left and right
+    .hero__image--left {
+        display: none;
+    }
+
+    .hero__image--right {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .hero__buttons {
+            flex-direction: row;
+        }
+    }
+
+    // Change image for desktops
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "hero-image-left hero-content hero-content hero-image-right";
+
+        .hero__image {
+            display: none; // Hide the default mobile image
+        }
+
+        .hero__image--left {
+            display: block;
+            grid-area: hero-image-left;
+        }
+
+        .hero__image--right {
+            display: block;
+            grid-area: hero-image-right;
+        }
+
+        .hero__content {
+            grid-area: hero-content;
+            margin-block: 0;
+            padding-inline: u.rem(32);
+        }
+    }
+
 }

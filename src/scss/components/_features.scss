@@ -1,0 +1,74 @@
+@use '../util' as u;
+
+.feature {
+    padding: u.rem(24);
+
+    &__number-container {
+        @include u.flexCenter;
+        flex-direction: column;
+        margin-block: u.rem(48);
+    }
+
+    &__vertical-line {
+        width: 0;
+        height: u.rem(75);
+        border: 1px solid var(--grey);
+    }
+
+    &__number {
+        border: 2px solid var(--grey);
+        background-color: white;
+        display: inline-block;
+        width: u.rem(50);
+        height: u.rem(50);
+        border-radius: 50%;
+        padding: u.rem(5);
+        font-weight: var(--f-w-extra-bold);
+        color: var(--grey);
+
+        @include u.flexCenter;
+    }
+
+    &__grid {
+        gap: u.rem(16);
+        margin-block-end: u.rem(48);
+    }
+
+    &__grid-item {
+        border-radius: u.rem(16);
+    }
+
+    &__content {
+        @include u.flexCenter;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: u.rem(16);
+    }
+
+    &__tagline {
+        font-size: var(--f-s);
+        font-weight: var(--f-w-black);
+        letter-spacing: u.rem(4);
+        text-transform: uppercase;
+        color: var(--teal);
+    }
+
+    &__title {
+        font-size: var(--f-l);
+        font-weight: var(--f-w-black);
+        color: var(--darkblue);
+        margin-block-end: u.rem(16);
+    }
+
+    &__description {
+        font-size: var(--f-body);
+        font-weight: var(--f-w-bold);
+        color: var(--grey);
+    }
+
+    &--overlap {
+        margin-block-end: u.rem(-50);
+    }
+}

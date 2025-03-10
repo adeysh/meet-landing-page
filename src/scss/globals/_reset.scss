@@ -18,15 +18,7 @@ body {
     min-height: 100vh;
     font-family: "Red Hat Display", sans-serif;
     font-size: var(--f-body);
-    line-height: 1.2;
-    // color: var(--black);
-    padding: 8vh 0;
-
-    @media screen and (width > u.em(1110)) {
-        padding: 0;
-        display: grid;
-        place-items: center;
-    }
+    line-height: 1.5;
 }
 
 h1,
@@ -52,6 +44,7 @@ img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: inherit;
 }
 
 ul {

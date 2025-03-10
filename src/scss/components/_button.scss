@@ -1,0 +1,18 @@
+@use '../util' as u;
+
+.button {
+    padding: u.rem(16);
+    color: var(--white);
+    border-radius: u.rem(32);
+    width: u.rem(192);
+    font-size: var(--f-body);
+    font-weight: var(--f-w-extra-bold);
+
+    &--teal {
+        background-color: var(--teal);
+    }
+
+    &--purple {
+        background-color: var(--purple);
+    }
+}

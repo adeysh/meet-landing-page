@@ -13,7 +13,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
         .attribution {
-            font-size: 15px;
+            font-size: 12px;
             text-align: center;
             position: absolute;
             left: 0;
@@ -30,31 +30,37 @@
 </head>
 
 <body>
-    <header class="wrapper">
+    <header class="header">
         <a href="/">
-            <img src="/images/logo.svg" class="logo" alt="Homepage" width="119" height="28">
+            <img src="/images/logo.svg" class="header__logo" alt="Homepage" width="119" height="28">
         </a>
     </header>
 
-    <main class="wrapper">
+    <main class="main">
         <section class="hero grid">
-            <img src="/images/desktop/image-hero-left.png" class="hero__image"
+            <img src="/images/tablet/image-hero.png" class="hero__image"
                 alt="Hero section image showing profile images of people">
-            <img src="/images/desktop/image-hero-right.png" class="hero__image"
-                alt="Hero section image showing profile images of people">
+
+            <img src="/images/desktop/image-hero-left.png" class="hero__image hero__image--left" alt="Left hero image">
+            <img src="/images/desktop/image-hero-right.png" class="hero__image hero__image--right"
+                alt="Right hero image">
+
             <div class="hero__content">
                 <h1 class="hero__title">Group Chat for Everyone</h1>
                 <p class="hero__description">
                     Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
                 </p>
-                <a href="#" class="button hero__button button--teal">Download v1.3</a>
-                <a href="#" class="button hero__button button--purple">What is it?</a>
+
+                <div class="hero__buttons">
+                    <a href="#" class="button button--teal">Download v1.3</a>
+                    <a href="#" class="button button--purple">What is it?</a>
+                </div>
             </div>
         </section>
-        <section class="features">
+        <section class="feature">
             <div class="feature__number-container">
                 <div class="feature__vertical-line"></div>
-                <p class="feature_number">01</p>
+                <p class="feature__number">01</p>
             </div>
 
             <div class="feature__grid grid">
@@ -85,14 +91,14 @@
                 </p>
             </div>
 
-            <div class="feature__number-container">
+            <div class="feature__number-container feature--overlap">
                 <div class="feature__vertical-line"></div>
-                <p class="feature_number">02</p>
+                <p class="feature__number">02</p>
             </div>
         </section>
     </main>
 
-    <footer class="wrapper footer--image">
+    <footer class="footer footer--image">
         <h2 class="footer__title">
             Experience more together
         </h2>
